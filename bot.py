@@ -2,7 +2,7 @@ import tweepy
 import os
 import time
 
-# Get API keys from environment variables
+# X API keys from environment variables
 API_KEY = os.getenv("API_KEY")
 API_SECRET = os.getenv("API_SECRET")
 ACCESS_TOKEN = os.getenv("ACCESS_TOKEN")
@@ -19,7 +19,7 @@ while True:
 try:
 api.update_status("Hello X! I am a bot 🤖")
 print("Tweet sent successfully")
-time.sleep(600) # wait 10 minutes before next tweet
+time.sleep(600) # Wait 10 minutes before next tweet
 except Exception as e:
 print("Error:", e)
-time.sleep(60) # wait 1 minute before retry
+time.sleep(60) # Wait 1 minute before retry
